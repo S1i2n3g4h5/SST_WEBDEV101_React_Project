@@ -1,16 +1,37 @@
-# React + Vite
+# 🦠 COVID-19 Stats Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mini React dashboard that displays real-time global and country-wise COVID-19 statistics.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🌍 **Global Overview** — Total cases, recoveries, and deaths worldwide
+- 🔍 **Country Search** — Filter stats by any country using a dropdown
+- 🃏 **Card & Table View** — Toggle between card layout and table layout
+- 🟡 **Severity Indicators** — Color-coded severity levels (Low / Medium / High) based on active cases
+- ⚡ **Live Data** — Fetches real-time data from the [disease.sh](https://disease.sh) public API
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (with `useState` & `useEffect`)
+- **Vite** — fast dev server & build tool
+- **Vanilla CSS** — custom dark theme styling
+- **disease.sh API** — free public COVID-19 data API
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx       # Main component with all logic
+└── index.css     # Global styles and dark theme
+```
+
+---
+
+> Built as a Web Development (React) course project.
